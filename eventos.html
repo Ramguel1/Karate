@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>takeshi-shin</title>
+   <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="logoT.png" style="border-radius: 50%;">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body id="body" style="background-color: rgb(0, 0, 0);" background="fondoP.webp"  >
+
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+
+
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="index.html" >
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="dojos.html" >
+                <div class="option">
+                    <i class="far fa-file" title="dojos"></i>
+                    <h4>Dojo</h4>
+                </div>
+            </a>
+
+            <a href="eventos.html" class="selected" >
+                <div class="option" >
+                    <i class="fas fa-video" title="Eventos"></i>
+                    <h4>Eventos</h4>
+                </div>
+            </a>
+
+            <a href="#" >
+                <div class="option">
+                    <i class="far fa-sticky-note" title="Blog"></i>
+                    <h4>Blog</h4>
+                </div>
+            </a>
+
+            <a href="#" >
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="#" >
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Nosotros</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+<br><br><br>
+
+<style>
+    .card-footer{
+      background-color: rgb(0, 0, 0);
+      color: rgb(230, 0, 0);
+    }
+    .container-fluid{
+        position: absolute;
+        width: 700px;
+        height: 500px;
+        transform: translateX(50px);
+        text-align: center;
+    }
+    .imgDJ{
+        width: 500px;
+        height: auto;
+        animation: miAnimacion 5s infinite ;
+            /* Repetir cada 5 segundos */
+            animation-delay: 5s ;
+    }
+    
+    @keyframes miAnimacion {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+</style>
+
+<style>
+    .card1{
+        height: 500px;
+        width: 400px;
+       
+    }
+    .card{
+        transform: translateX(100px);
+        height: 500px;
+        width: 400px;
+    }
+</style>
+<div class="card">
+    <img src="eve1.jpg" class="card-img-top card1" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Seminario</h5>
+      <p class="card-text">Seminario técnico y de kata impartido por JUNKO FUKUDA Sensei.</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver mas</button>
+    </div>
+  </div>
+   
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="seminario1.1.jpg" class="img-thumbnail" alt="..."><br>
+            <img src="seminario1.2.jpg" class="img-thumbnail" alt="..."><br>
+            <img src="seminario1.3.jpg" class="img-thumbnail" alt="..."><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
