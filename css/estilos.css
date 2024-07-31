@@ -150,7 +150,6 @@ a.selected{
 .img-animada{
     width: 700px;
     height: 700px;
-    border-radius: 50%;
     animation: desplazamiento 10s;
 }
 
